@@ -13,8 +13,8 @@
 
 # run the program
 
-onmt_build_vocab -config /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/vocab_config.yml
-sed -i '1iCWE-119\t99999999\nCWE-125\t99999999\nCWE-20\t99999999\nCWE-200\t99999999\nCWE-264\t99999999\nCWE-476\t99999999\nCWE-399\t99999999\nCWE-189\t99999999\nCWE-416\t99999999\nCWE-190\t99999999\nCWE-362\t99999999\nCWE-787\t99999999\nCWE-284\t99999999\nCWE-772\t99999999\nCWE-415\t99999999' /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/data.vocab.src
-onmt_train --config /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/new_train_config.yml 2>&1 | tee -a /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/log.txt
+onmt_build_vocab -config /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/vocab_config.yml
+sed -i '1iCWE-119\t99999999\nCWE-125\t99999999\nCWE-20\t99999999\nCWE-200\t99999999\nCWE-264\t99999999\nCWE-476\t99999999\nCWE-399\t99999999\nCWE-189\t99999999\nCWE-416\t99999999\nCWE-190\t99999999\nCWE-362\t99999999\nCWE-787\t99999999\nCWE-284\t99999999\nCWE-772\t99999999\nCWE-415\t99999999' /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/data.vocab.src
+onmt_train --config /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/new_train_config.yml 2>&1 | tee -a /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/log.txt
 
     

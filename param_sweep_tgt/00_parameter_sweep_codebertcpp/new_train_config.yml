@@ -3,25 +3,25 @@ gpu_ranks:
 - 0
 batch_size: 4
 valid_batch_size: 1
-src_vocab: /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/data.vocab.src
-tgt_vocab: /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/data.vocab.tgt
+src_vocab: /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/data.vocab.src
+tgt_vocab: /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/data.vocab.tgt
 src_vocab_size: 2000
 tgt_vocab_size: 2000
 src_seq_length: 1000
 tgt_seq_length: 100
-both_embeddings: /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/codebertcpp_embeddings.txt
+both_embeddings: /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/codebertcpp_embeddings.txt
 embeddings_type: "GloVe"
 freeze_word_vecs_enc: True
 freeze_word_vecs_dec: True
-save_data: /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/finetuned_embeddings
+save_data: /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/finetuned_embeddings
 data:
   github:
-    path_src: /home/lgm/VRepair2.0/vul_data/random_fine_tune_train.src.txt
-    path_tgt: /home/lgm/VRepair2.0/vul_data/random_fine_tune_train.tgt.txt
+    path_src: /content/VRepair2.0/vul_data/random_fine_tune_train.src.txt
+    path_tgt: /content/VRepair2.0/vul_data/random_fine_tune_train.tgt.txt
   valid:
-    path_src: /home/lgm/VRepair2.0/vul_data/random_fine_tune_valid.src.txt
-    path_tgt: /home/lgm/VRepair2.0/vul_data/random_fine_tune_valid.tgt.txt
-save_model: /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/model/model
+    path_src: /content/VRepair2.0/vul_data/random_fine_tune_valid.src.txt
+    path_tgt: /content/VRepair2.0/vul_data/random_fine_tune_valid.tgt.txt
+save_model: /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/model/model
 overwrite: false
 train_steps: 20000
 valid_steps: 2000
@@ -52,5 +52,5 @@ position_encoding: true
 accum_count: 8
 bridge: true
 tensorboard: true
-tensorboard_log_dir: /home/lgm/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/tensorboard_log_dir
+tensorboard_log_dir: /content/VRepair2.0/param_sweep_tgt/00_parameter_sweep_codebertcpp/tensorboard_log_dir
 seed: 0
