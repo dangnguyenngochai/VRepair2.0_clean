@@ -8,3 +8,4 @@ fine_tune_data/cve_fixes/*
 codebert-base-with-vul-tok/*
 
 !param_sweep_tgt/00_parameter_sweep
+!param_sweep_tgt/00_parameter_sweep_codebertcpp
